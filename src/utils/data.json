@@ -46,7 +46,7 @@
         "NPM",
         "Bower",
         "Yadda",
-        "qunit",
+        "Qunit",
         "Mirage",
         "Storybook",
         "Bootstrap",
@@ -54,8 +54,42 @@
       ],
       "projects": [
         {
-          "title": "project",
-          "description": "desc"
+          "title": "Service contract adjustments",
+          "description": "I was involved in a team working on a greenfield project to allow British Gas service customers modify, cancel or renew their contract online. This involved communication with AWS hosted "
+        }
+      ]
+    },
+    {
+      "company": "Centrica - British Gas",
+      "logo": "bg.jpg",
+      "position": "Senior Front End Developer",
+      "website": "https://www.britishgas.co.uk",
+      "startDate": "2018",
+      "endDate": "2019",
+      "summary": "I was a part of the home services team, responsible for driving over 72% of the online business revenue. I was one of three senior front end developers on this team. Starting at Centrica, I learned and used Ember.js within a few days. For everything we did in the team we applied test driven development with the use of Qunit and Yadda to write acceptance, integration and unit tests. We used the Wunderflow Git workflow along with continuous integration and continuous deployment within a two week sprint cycle.",
+      "highlights": [],
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "LESS",
+        "JavaScript",
+        "jQuery",
+        "Ember.js",
+        "Git",
+        "Responsive",
+        "NPM",
+        "Bower",
+        "Yadda",
+        "Qunit",
+        "Mirage",
+        "Storybook",
+        "Bootstrap",
+        "JSON API"
+      ],
+      "projects": [
+        {
+          "title": "Service contract adjustments",
+          "description": "I was involved in a team working on a greenfield project to allow British Gas service customers modify, cancel or renew their contract online. This involved communication with AWS hosted "
         }
       ]
     }
