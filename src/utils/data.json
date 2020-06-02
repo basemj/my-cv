@@ -1,0 +1,140 @@
+{
+  "basics": {
+    "name": "Basem Jawahri",
+    "label": "Senior Front End Developer",
+    "picture": "profile-photo.png",
+    "email": "basem.jawahri@gmail.com",
+    "phone": "+44 (0) 795 116 0004",
+    "website": "",
+    "summary": "I am a front end developer with over fourteen years of experience in technology looking for opportunities at companies that are vibrant, energetic and willing to embrace cutting edge technology. I have the technical knowhow to pick up new technology and methodologies and a keen eye for good code.",
+    "location": {
+      "address": "Maida Vale",
+      "postalCode": "",
+      "city": "London",
+      "countryCode": "UK",
+      "region": "England"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jawahri",
+        "display": "linkedin.com/in/jawahri",
+        "logo": "linkedin.png",
+        "url": "http://www.linkedin.com/in/jawahri"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Centrica - British Gas",
+      "logo": "bg.jpg",
+      "position": "Senior Front End Developer",
+      "website": "https://www.britishgas.co.uk",
+      "startDate": "2018",
+      "endDate": "2019",
+      "summary": "I was a part of the home services team, responsible for driving over 72% of the online business revenue. I was one of three senior front end developers on this team. Starting at Centrica, I learned and used Ember.js within a few days. For everything we did in the team we applied test driven development with the use of Qunit and Yadda to write acceptance, integration and unit tests. We used the Wunderflow Git workflow along with continuous integration and continuous deployment within a two week sprint cycle.",
+      "highlights": [],
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "LESS",
+        "JavaScript",
+        "jQuery",
+        "Ember.js",
+        "Git",
+        "Responsive",
+        "NPM",
+        "Bower",
+        "Yadda",
+        "qunit",
+        "Mirage",
+        "Storybook",
+        "Bootstrap",
+        "JSON API"
+      ],
+      "projects": [
+        {
+          "title": "project",
+          "description": "desc"
+        }
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "gpa": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "React.js Nano-degree Program",
+      "date": "2020",
+      "awarder": "udacity.com",
+      "logo": "udacity.png",
+      "summary": ""
+    },
+    {
+      "title": "Certification in Enterprise",
+      "date": "2012",
+      "awarder": "London Southbank University",
+      "logo": "lsbu.jpeg",
+      "summary": ""
+    },
+    {
+      "title": "Sitecore CMS Certified Developer",
+      "date": "2011",
+      "awarder": "sitecore.com",
+      "logo": "sitecore.jpeg",
+      "summary": ""
+    },
+    {
+      "title": "Microsoft Sharepoint Designer 2010",
+      "date": "2010",
+      "awarder": "QA",
+      "logo": "qa.png",
+      "summary": ""
+    },
+    {
+      "title": "Certified HTML/CSS Developer",
+      "date": "2008",
+      "awarder": "w3schools.com",
+      "logo": "w3.png",
+      "summary": ""
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Arabic",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Farsi/Persian",
+      "fluency": "Fluent"
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }
+  ]
+}
