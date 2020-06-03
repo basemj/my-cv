@@ -12,6 +12,7 @@ import {
 import data from "../utils/data.json";
 import Tag from "./Tag";
 import Project from "./Project";
+import Footer from "./Footer";
 
 Font.register({
   family: "Roboto",
@@ -55,16 +56,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   sectionHeader: { marginBottom: 20 },
-  footer: {
-    position: "absolute",
-    fontSize: 8,
-    bottom: 20,
-    left: 30,
-    right: 30,
-    color: "grey",
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
+
   profilePhotoWrap: {
     marginLeft: 25,
     flex: 1,
@@ -293,15 +285,7 @@ function PdfDocument() {
           </View>
         ))}
 
-        <View style={styles.footer} fixed>
-          <Text
-            fixed
-            render={({ pageNumber, totalPages }) =>
-              `${data.basics.name} - page ${pageNumber} of ${totalPages}`
-            }
-          />
-          <Text>This CV is developed using react-pdf</Text>
-        </View>
+        <Footer name={data.basics.name} />
       </Page>
     </Document>
   );
