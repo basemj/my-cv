@@ -56,6 +56,207 @@
         {
           "title": "Service contract adjustments",
           "description": "I was involved in a team working on a greenfield project to allow British Gas service customers modify, cancel or renew their contract online. This involved communication with AWS hosted "
+        },
+        {
+          "title": "Services Acquisitions",
+          "description": ""
+        },
+        {
+          "title": "Service Campaign Redeem app",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "company": "MRM McCAN",
+      "logo": "mrm.jpg",
+      "position": "Senior Front End Developer",
+      "website": "",
+      "startDate": "2018",
+      "endDate": "2018",
+      "summary": "",
+      "highlights": [],
+      "tags": [],
+      "projects": [
+        {
+          "title": "",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "company": "ORM Digital",
+      "logo": "orm.png",
+      "position": "Senior Front End Developer",
+      "website": "",
+      "startDate": "2017",
+      "endDate": "2017",
+      "summary": "",
+      "highlights": [],
+      "tags": [],
+      "projects": [
+        {
+          "title": "",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "company": "DurableDigital",
+      "logo": "durabledigital.png",
+      "position": "Full Stack Developer",
+      "website": "",
+      "startDate": "2016",
+      "endDate": "2017",
+      "summary": "",
+      "highlights": [],
+      "tags": [
+        "XHTML",
+        "HTML5",
+        "CSS3",
+        "LESS",
+        "JavaScript",
+        "ASP.NET C#",
+        "jQuery",
+        "Razor view engine",
+        "Umbraco CMS",
+        "Angular",
+        "Git",
+        "Responsive",
+        "Typescript",
+        "Grunt",
+        "NPM"
+      ],
+      "projects": [
+        {
+          "title": "The Ford Foundation",
+          "description": "The Ford Foundation is an independent, non-profit grant-making organization and the second largest philanthropy in the United States. I was involved in a revamp of their website, working closely with back-end, design and QA. The solution is built on an Umbraco platform with an angular client side presenting translatable views. The grant-making database consumes data from a REST API and translates that data into a single page application where charts are drawn to represent the data given. These charts interact with other parts of the solution combining the data provided by the service and data provided by the CMS."
+        }
+      ]
+    },
+    {
+      "company": "Avanade UK",
+      "logo": "avanade.png",
+      "position": "Senior Front End Developer",
+      "website": "",
+      "startDate": "2016",
+      "endDate": "2016",
+      "summary": "",
+      "highlights": [],
+      "tags": [
+        "XHTML",
+        "HTML5",
+        "CSS3",
+        "SCSS",
+        "JavaScript",
+        "jQuery",
+        "Angular",
+        "LoDash",
+        "TFS",
+        "Animation",
+        "Responsive",
+        "NPM",
+        "Gulp",
+        "Grunt",
+        "Office 365 REST API",
+        "Karma"
+      ],
+      "projects": [
+        {
+          "title": "Vodafone Digital Workplace",
+          "description": "Developed the Vodafone Digital Workplace for Vodafone internal use which consisted of a collection of provider hosted SharePoint apps in Office 365. The workplace is used by over 100,000 Vodafone employees globally and supported in sixteen languages. The client side is a SPA built on Angular with a per client customizable grid like the Windows tiles but more options in app dimensions. The workplace is where each user can add, remove, reposition and resize any of the apps within the Vodafone app store. The app store is also part of this build where each app is a separate module that interacts with the workspace and sibling modules. In the styling front, everything is mobile first HTML5/CSS3 with considerations for touch events."
+        }
+      ]
+    },
+    {
+      "company": "JustGiving",
+      "logo": "justgiving.png",
+      "position": "Senior Front End Developer",
+      "website": "",
+      "startDate": "2013",
+      "endDate": "2016",
+      "summary": "",
+      "highlights": [],
+      "tags": [
+        "XHTML",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "SCSS",
+        "LESS",
+        "JavaScript",
+        "ASP.NET C#",
+        "XML",
+        "jQuery",
+        "jQuery UI",
+        "Razor view engine",
+        "Umbraco CMS",
+        "MV* including Angular and Knockout",
+        "Git",
+        "Git Submodule",
+        "Animation",
+        "Responsive",
+        "Optimizely"
+      ],
+      "projects": [
+        {
+          "title": "",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "company": "BasePixel",
+      "logo": "basepixel.png",
+      "position": "Senior Front End Developer",
+      "website": "",
+      "startDate": "2011",
+      "endDate": "2013",
+      "summary": "",
+      "highlights": [],
+      "tags": [],
+      "projects": [
+        {
+          "title": "",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "company": "ClearPeople",
+      "logo": "clearpeople.jpeg",
+      "position": "Front End Developer",
+      "website": "",
+      "startDate": "2006",
+      "endDate": "2011",
+      "summary": "I started my front end developer career at ClearPeople.",
+      "highlights": [],
+      "tags": [
+        "XHTML",
+        "CSS",
+        "JavaScript",
+        "ASP.NET C#",
+        "XSLT",
+        "XML",
+        "Sitecore CMS",
+        "jQuery",
+        "jQuery UI",
+        "RAD Controls",
+        "AJAX",
+        "Microsoft SharePoint 2010"
+      ],
+      "projects": [
+        {
+          "title": "National Autistic Society",
+          "description": "This was an on-going project which involved a lot of adding and tweaking of site features, so the XHTML, CSS and JavaScript libraries had to be very well maintained to avoid problems. Accessibility and browser compatibility were very important to this client due to the nature of its target audience which meant that fall-backs were always put in place for new features and thorough testing was done before any deployment. As the front end lead, I was in charge of planning the structure and setting up the Sitecore page layouts, sub-layouts and what we called “blocks” for this very flexible site. The blocks can be setup differently and placed within the homepage or any other page, including the e-commerce and checkout process pages. This also applies to the Sitecore modules used on the site such as the web forms for marketer’s module styled to fit anywhere the client wished. Along with this flexibility came the risk of site editors making mistakes so I was in char the Sitecore security setup on the solution based on inheritance of roles and domains for the microsites within the setup."
+        },
+        {
+          "title": "SEGA",
+          "description": "This SEGA project was for a Microsoft SharePoint intranet publishing site with a very challenging design which included a custom jQuery carousel with AJAX functionality, some custom web parts and as much branding of vanilla SharePoint features as possible. With a new master page, page layouts, menus and a lot of customization to the SharePoint ribbon deployed, I was able to go to the client offices and carry out a training session for the new users which included instructions on how to manage the site and the already available social networking features of SharePoint."
+        },
+        {
+          "title": "Stena Lines",
+          "description": "Stena recognized the opportunity to upgrade the websites of four of their business units from Microsoft CMS 2002 to SharePoint 2010. This was to be done in a manner that the transition was seamless to the site visitors. Rather than migrating all of the styling from the previous solution, we brought in what was relevant and cleaned it up. A lot of this was then modified in order to work with the various SharePoint controls such as the navigation and breadcrumbs etc."
         }
       ]
     }

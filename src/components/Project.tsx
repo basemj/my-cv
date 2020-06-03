@@ -4,7 +4,7 @@ import { IProject } from "../types";
 
 const styles = StyleSheet.create({
   projectWrapper: { marginTop: 10, marginLeft: 35 },
-  projectTitle: { fontWeight: "bold" },
+  projectTitle: { fontWeight: "bold", marginVertical: 5 },
 });
 
 interface IProps {

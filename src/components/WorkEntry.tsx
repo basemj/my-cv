@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     border: `2 solid ${primaryColor}`,
   },
-  image: { borderRadius: 5, padding: 2 },
+  image: { borderRadius: 2 },
   companyName: { fontWeight: "bold" },
   position: { fontSize: 10, color: fontSecondaryColor, marginTop: 3 },
   date: {
