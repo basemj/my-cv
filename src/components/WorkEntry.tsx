@@ -47,7 +47,7 @@ interface IProps {
 const WorkEntry = ({ work }: IProps) => {
   return (
     <View>
-      <View style={styles.entryHeader}>
+      <View style={styles.entryHeader} wrap={false}>
         <View style={styles.imageWrapper}>
           <Image
             src={`${process.env.PUBLIC_URL}/assets/images/${work.logo}`}
