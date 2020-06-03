@@ -1,20 +1,14 @@
 import React from "react";
 import { Text, StyleSheet, View } from "@react-pdf/renderer";
 import Award from "./Award";
+import { IAward } from "../types";
 
 const styles = StyleSheet.create({
   sectionHeader: { marginBottom: 20 },
 });
 
-interface Iaward {
-  title: string,
-  logo: string,
-  awarder: string,
-  date: string,
-}
-
 interface IProps {
-  awards: Array<Iaward>
+  awards: Array<IAward>;
 }
 
 const Awards = ({ awards }: IProps) => {

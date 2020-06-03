@@ -1,17 +1,13 @@
 import React from "react";
-import {
-  Text,
-  StyleSheet,
-  View,
-  Image,
-} from "@react-pdf/renderer";
+import { Text, StyleSheet, View, Image } from "@react-pdf/renderer";
+import { fontSecondaryColor, accentColor } from "../colors";
 
 const styles = StyleSheet.create({
   profileBanner: {
     flexDirection: "row",
     paddingBottom: 25,
     marginBottom: 25,
-    borderBottom: "2 solid #aaaaaa",
+    borderBottom: `2 solid ${accentColor}`,
   },
   title: {
     fontSize: 40,
@@ -21,7 +17,7 @@ const styles = StyleSheet.create({
   },
   author: {
     fontSize: 12,
-    color: "#666666",
+    color: fontSecondaryColor,
     marginBottom: 10,
   },
   profilePhotoWrap: {
@@ -32,33 +28,28 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     borderRadius: 50,
-    backgroundColor: "#eeeeee",
+    backgroundColor: accentColor,
   },
 });
 
 interface IProps {
-  name: string,
-  label: string,
-  picture: string,
+  name: string;
+  label: string;
+  picture: string;
 }
 
-const ProfileBanner = ({name, label, picture}: IProps) => {
+const ProfileBanner = ({ name, label, picture }: IProps) => {
   return (
-    <View
-    style={styles.profileBanner}
-  >
-    <View style={{ flex: 2, textAlign: "right" }}>
-      <Text style={styles.title}>{name}</Text>
-      <Text style={styles.author}>{label}</Text>
+    <View style={styles.profileBanner}>
+      <View style={{ flex: 2, textAlign: "right" }}>
+        <Text style={styles.title}>{name}</Text>
+        <Text style={styles.author}>{label}</Text>
+      </View>
+      <View style={styles.profilePhotoWrap}>
+        <Image src={picture} style={styles.profilePhoto} />
+      </View>
     </View>
-    <View style={styles.profilePhotoWrap}>
-      <Image
-        src={picture}
-        style={styles.profilePhoto}
-      />
-    </View>
-  </View>
   );
-}
+};
 
 export default ProfileBanner;

@@ -1,23 +1,25 @@
 import React from "react";
 import { Text, StyleSheet, View } from "@react-pdf/renderer";
 import ContactItem from "./ContactItem";
+import { IProfile } from "../types";
+import { accentColor, fontPrimaryColor, primaryColor, white } from "../colors";
 
 const styles = StyleSheet.create({
   verticalBanner: {
-    backgroundColor: "#eeeeee",
+    backgroundColor: accentColor,
     marginTop: -35,
     marginBottom: 35,
     width: 190,
     fontSize: 12,
-    color: "#333333",
+    color: fontPrimaryColor,
   },
   bannerHighlight: {
-    backgroundColor: "#bada55",
+    backgroundColor: primaryColor,
     height: 20,
     marginHorizontal: 20,
   },
   contactDetails: {
-    backgroundColor: "#ffffff",
+    backgroundColor: white,
     paddingHorizontal: 20,
     paddingTop: 30,
     paddingBottom: 15,
@@ -30,22 +32,23 @@ const styles = StyleSheet.create({
   sectionHeader: { marginBottom: 20 },
 });
 
-interface IProfile {
-  url: string,
-  logo: string,
-  display: string,
-}
-
 interface IProps {
-  address: string,
-  city: string,
-  phone: string,
-  email: string,
-  summary: string,
-  profiles: Array<IProfile>,
+  address: string;
+  city: string;
+  phone: string;
+  email: string;
+  summary: string;
+  profiles: Array<IProfile>;
 }
 
-const VerticalBanner = ({ address, city, phone, email, summary, profiles }: IProps) => {
+const VerticalBanner = ({
+  address,
+  city,
+  phone,
+  email,
+  summary,
+  profiles,
+}: IProps) => {
   return (
     <View style={styles.verticalBanner}>
       <View style={styles.bannerHighlight}></View>

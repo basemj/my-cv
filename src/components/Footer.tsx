@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Text,
-  StyleSheet,
-  View,
-} from "@react-pdf/renderer";
-
+import { Text, StyleSheet, View } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
   footer: {
@@ -20,10 +15,10 @@ const styles = StyleSheet.create({
 });
 
 interface IProps {
-  name: string,
+  name: string;
 }
 
-const Footer = ({name}: IProps) => {
+const Footer = ({ name }: IProps) => {
   return (
     <View style={styles.footer} fixed>
       <Text
@@ -35,6 +30,6 @@ const Footer = ({name}: IProps) => {
       <Text>This CV is developed using react-pdf</Text>
     </View>
   );
-}
+};
 
 export default Footer;

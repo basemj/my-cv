@@ -2,6 +2,8 @@ import React from "react";
 import { Text, StyleSheet, View, Image } from "@react-pdf/renderer";
 import Tag from "./Tag";
 import Project from "./Project";
+import { IWork } from "../types";
+import { fontSecondaryColor, primaryColor } from "../colors";
 
 const styles = StyleSheet.create({
   entryHeader: { flexDirection: "row", alignItems: "center" },
@@ -10,19 +12,19 @@ const styles = StyleSheet.create({
     width: 34,
     marginRight: 10,
     borderRadius: 5,
-    border: "2 solid #bada55",
+    border: `2 solid ${primaryColor}`,
   },
   image: { borderRadius: 5, padding: 2 },
-  position: { fontSize: 10, color: "#666666", marginTop: 3 },
+  position: { fontSize: 10, color: fontSecondaryColor, marginTop: 3 },
   date: {
     flex: 1,
     marginLeft: 10,
     textAlign: "right",
-    color: "#666666",
+    color: fontSecondaryColor,
     fontSize: 10,
   },
   entryBody: {
-    borderLeft: "2 solid #bada55",
+    borderLeft: `2 solid ${primaryColor}`,
     marginLeft: 16,
     paddingLeft: 26,
     paddingTop: 15,
@@ -37,24 +39,8 @@ const styles = StyleSheet.create({
   },
 });
 
-interface IProject {
-  title: string;
-  description: string;
-}
-
-interface IWork {
-  logo: string,
-  company: string,
-  position: string,
-  startDate: string,
-  endDate: string,
-  summary: string,
-  tags: Array<string>,
-  projects: Array<IProject>,
-}
-
 interface IProps {
-  work: IWork
+  work: IWork;
 }
 
 const WorkEntry = ({ work }: IProps) => {
@@ -69,9 +55,7 @@ const WorkEntry = ({ work }: IProps) => {
         </View>
         <View>
           <Text>{work.company}</Text>
-          <Text style={styles.position}>
-            {work.position}
-          </Text>
+          <Text style={styles.position}>{work.position}</Text>
         </View>
         <View style={styles.date}>
           <Text>

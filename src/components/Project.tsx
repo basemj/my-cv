@@ -1,15 +1,11 @@
 import React from "react";
 import { Text, StyleSheet, View } from "@react-pdf/renderer";
+import { IProject } from "../types";
 
 const styles = StyleSheet.create({
   projectWrapper: { marginTop: 10, marginLeft: 35 },
   projectTitle: { fontWeight: "bold" },
 });
-
-interface IProject {
-  title: string;
-  description: string;
-}
 
 interface IProps {
   project: IProject;

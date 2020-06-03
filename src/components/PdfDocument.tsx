@@ -13,6 +13,7 @@ import {
   View,
   Font,
 } from "@react-pdf/renderer";
+import { fontPrimaryColor } from "../colors";
 
 Font.register({
   family: "Roboto",
@@ -37,6 +38,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 35,
     fontSize: 12,
     fontFamily: "Roboto",
+    color: fontPrimaryColor,
   },
   topSectionWrapper: {
     flexDirection: "row",
@@ -45,9 +47,10 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   sectionHeader: { marginBottom: 20 },
+  rightSection: { flex: 1, marginLeft: 35 },
 });
 
-function PdfDocument() {
+const PdfDocument = () => {
   return (
     <Document title="Basem_Jawahri">
       <Page style={styles.body}>
@@ -61,7 +64,7 @@ function PdfDocument() {
             profiles={data.basics.profiles}
           />
 
-          <View style={{ flex: 1, marginLeft: 35 }}>
+          <View style={styles.rightSection}>
             <ProfileBanner
               name={data.basics.name}
               label={data.basics.label}
@@ -82,6 +85,6 @@ function PdfDocument() {
       </Page>
     </Document>
   );
-}
+};
 
 export default PdfDocument;
