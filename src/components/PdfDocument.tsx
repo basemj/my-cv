@@ -6,7 +6,6 @@ import {
   StyleSheet,
   View,
   Image,
-  Link,
   Font,
 } from "@react-pdf/renderer";
 import data from "../utils/data.json";
@@ -100,6 +99,7 @@ function PdfDocument() {
               />
               {data.basics.profiles.map((profile) => (
                 <ContactItem
+                  key={profile.url}
                   icon={`${process.env.PUBLIC_URL}/assets/images/${profile.logo}`}
                   text={profile.display}
                   link={profile.url}
@@ -128,8 +128,9 @@ function PdfDocument() {
 
             <View style={{ fontSize: 12 }}>
               <Text style={styles.sectionHeader}>CERTIFICATIONS</Text>
-              {data.awards.map((award) => (
+              {data.awards.map((award, index) => (
                 <Award
+                  key={index}
                   title={award.title}
                   logo={`${process.env.PUBLIC_URL}/assets/images/${award.logo}`}
                   awarder={award.awarder}

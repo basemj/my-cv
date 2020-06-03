@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Text,
-  StyleSheet,
-} from "@react-pdf/renderer";
-
+import { Text, StyleSheet } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
   tag: {
@@ -15,23 +11,15 @@ const styles = StyleSheet.create({
     fontSize: 9,
     marginRight: 5,
     marginBottom: 7,
-  }
+  },
 });
 
 interface IProps {
-  key: number,
-  tagText: string
+  tagText: string;
 }
 
-const Tag = ({key, tagText}: IProps) => {
-  return (
-    <Text
-      key={key}
-      style={styles.tag}
-    >
-      {tagText}
-    </Text>
-  );
-}
+const Tag = ({ tagText }: IProps) => {
+  return <Text style={styles.tag}>{tagText}</Text>;
+};
 
 export default Tag;

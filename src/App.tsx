@@ -1,5 +1,5 @@
 import React from "react";
-import { PDFViewer, PDFDownloadLink, View } from "@react-pdf/renderer";
+import { PDFViewer, PDFDownloadLink } from "@react-pdf/renderer";
 import PdfDocument from "./components/PdfDocument";
 import { isMobile } from "react-device-detect";
 import "./App.css";
