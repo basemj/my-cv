@@ -35,14 +35,8 @@
       "summary": "I was a part of the home services team, responsible for driving over 72% of the online business revenue. I was one of three senior front end developers on this team. Starting at Centrica, I learned and used Ember.js within a few days. For everything we did in the team we applied test driven development with the use of Qunit and Yadda to write acceptance, integration and unit tests. We used the Wunderflow Git workflow along with continuous integration and continuous deployment within a two week sprint cycle.",
       "highlights": [],
       "tags": [
-        "HTML5",
-        "CSS3",
-        "LESS",
-        "JavaScript",
-        "jQuery",
         "Ember.js",
-        "Git",
-        "Responsive",
+        "Github",
         "NPM",
         "Bower",
         "Yadda",
@@ -50,7 +44,9 @@
         "Mirage",
         "Storybook",
         "Bootstrap",
-        "JSON API"
+        "JSON API",
+        "CI",
+        "CD"
       ],
       "projects": [
         {
@@ -59,11 +55,11 @@
         },
         {
           "title": "Services Acquisitions",
-          "description": ""
+          "description": "My teams main responsibility was the day to day maintenance and feature building of the services acquisition app which drove over 72% of the British Gas online revenue."
         },
         {
           "title": "Service Campaign Redeem app",
-          "description": ""
+          "description": "I was responsible for building and maintaining a campaign redeem app on that went on to process 12,000 customers in the first month of its release."
         }
       ]
     },
@@ -76,11 +72,11 @@
       "endDate": "2018",
       "summary": "",
       "highlights": [],
-      "tags": [],
+      "tags": ["HTML5", "CSS3", "SASS", "js/JQuery", "NPM/Gulp", "Git"],
       "projects": [
         {
-          "title": "",
-          "description": ""
+          "title": "TommeeTippee",
+          "description": "TommeeTippee as a client of MRM wanted to improve their site performance, add an arabic language for their Middle East customers and get a review of their existing code for which I was assigned to. As well as implementation of the new features/improvements, I provided TommeeTippee with a detailed report."
         }
       ]
     },
@@ -91,15 +87,30 @@
       "website": "",
       "startDate": "2017",
       "endDate": "2017",
-      "summary": "",
+      "summary": "ORM is an award-winning digital strategy agency with a particular focus on providing Sitecore solutions. In my time working at ORM I was involved in multiple projects such as Arriva Chiltern Railways, South Western Railway, Transpennine Express and Great Western Railway. The work varied between Knockout.js, Angular.js and pure ES6 with a component based architecture. This is a fast paced environment where quite often switching between projects is required. My main focus here was the timely delivery of the SWR project for which I also ran client training and delivering a refactored ticket booking system for GWR which we moved from knockout to angular.",
       "highlights": [],
-      "tags": [],
-      "projects": [
-        {
-          "title": "",
-          "description": ""
-        }
-      ]
+      "tags": [
+        "LESS",
+        "SCSS",
+        "ES6",
+        "ASP.NET C#",
+        "Razor view engine",
+        "Sitecore CMS",
+        "Angular.js",
+        "Knockout.js",
+        "Bitbucket",
+        "Typescript",
+        "Redux / ngRx",
+        "RxJS",
+        "Grunt",
+        "Gulp",
+        "Bower",
+        "Webpack",
+        "NPM",
+        "MongoDB",
+        "AWS"
+      ],
+      "projects": []
     },
     {
       "company": "DurableDigital",
@@ -111,19 +122,14 @@
       "summary": "",
       "highlights": [],
       "tags": [
-        "XHTML",
-        "HTML5",
-        "CSS3",
-        "LESS",
-        "JavaScript",
         "ASP.NET C#",
-        "jQuery",
         "Razor view engine",
         "Umbraco CMS",
         "Angular",
-        "Git",
-        "Responsive",
+        "RxJS",
+        "Github",
         "Typescript",
+        "Node.js",
         "Grunt",
         "NPM"
       ],
@@ -144,17 +150,10 @@
       "summary": "",
       "highlights": [],
       "tags": [
-        "XHTML",
-        "HTML5",
-        "CSS3",
-        "SCSS",
-        "JavaScript",
-        "jQuery",
-        "Angular",
+        "Angular.js",
         "LoDash",
         "TFS",
         "Animation",
-        "Responsive",
         "NPM",
         "Gulp",
         "Grunt",
@@ -175,24 +174,20 @@
       "website": "",
       "startDate": "2013",
       "endDate": "2016",
-      "summary": "",
+      "summary": "For three years at JustGiving I was part of a growing team of eleven front end developers in an agile environment and was fortunate enough to be allocated to some of the very important parts of the website. Some of the areas which I was able to work on included the Charity landing pages, the user profile page, the homepages and two versions of the donation process. While working on these projects, I had the opportunity to lead the path to a responsive web experience and to create a new style guide for future use and maintenance of the JustGiving brand. I was able to map out a monolith and come up with a plan on how we can distribute and unify the new style guide/component library. Part of this plan was to bring all CMS content into one platform with a flexible layout configuration.",
       "highlights": [],
       "tags": [
-        "XHTML",
-        "HTML5",
-        "CSS3",
         "SASS",
         "SCSS",
         "LESS",
-        "JavaScript",
-        "ASP.NET C#",
         "XML",
-        "jQuery",
         "jQuery UI",
         "Razor view engine",
         "Umbraco CMS",
-        "MV* including Angular and Knockout",
-        "Git",
+        "MV*",
+        "Angular.js",
+        "knockout.js",
+        "Github",
         "Git Submodule",
         "Animation",
         "Responsive",
@@ -200,8 +195,16 @@
       ],
       "projects": [
         {
-          "title": "",
-          "description": ""
+          "title": "Homepage",
+          "description": "The homepage was built with Angular.js and served a logged in and a logged out state. With this project there was an emphasis on performance as well as strong UX decisions. The logged in state had an instagram-like infinite scrolling with featured cards. This project also carried with it the redesign of the header/navigation to a responsive design and hosted on AWS as a separate component."
+        },
+        {
+          "title": "One click donation",
+          "description": "The one click donation process was built on top of the existing donation process with knockout.js which allowed logged in visitors to donate with the least friction possible. This project involved a lot of A/B testing and analytics which saw an 11% rise in donations."
+        },
+        {
+          "title": "Charity Landing page",
+          "description": "The charity landing page was the number one entry page to the website. This page was very important in terms of visitor engagement and retention. I was involved in redesigning and moving of this page from the legacy code to an AWS hosted responsive layout. I took charge during this project the drive to move to a responsive layout which led to the development of the JustGiving style-guide."
         }
       ]
     },
@@ -214,11 +217,19 @@
       "endDate": "2013",
       "summary": "",
       "highlights": [],
-      "tags": [],
+      "tags": ["SharePoint", "Sitecore", "Umbraco", "Backbone", "Bitbucket"],
       "projects": [
         {
-          "title": "",
-          "description": ""
+          "title": "Sysdoc",
+          "description": "SharePoint intranet solution for a client of Sysdoc using SharePoint designer."
+        },
+        {
+          "title": "ByeBye London",
+          "description": "Sitecore solution for ByeBye London, an advertising agency and tour guide catalogue to digitize it's operation."
+        },
+        {
+          "title": "West9properties",
+          "description": "Creating a web presence for an estate agency using Umbraco CMS providing viewings scheduler."
         }
       ]
     },
@@ -248,7 +259,7 @@
       "projects": [
         {
           "title": "National Autistic Society",
-          "description": "This was an on-going project which involved a lot of adding and tweaking of site features, so the XHTML, CSS and JavaScript libraries had to be very well maintained to avoid problems. Accessibility and browser compatibility were very important to this client due to the nature of its target audience which meant that fall-backs were always put in place for new features and thorough testing was done before any deployment. As the front end lead, I was in charge of planning the structure and setting up the Sitecore page layouts, sub-layouts and what we called “blocks” for this very flexible site. The blocks can be setup differently and placed within the homepage or any other page, including the e-commerce and checkout process pages. This also applies to the Sitecore modules used on the site such as the web forms for marketer’s module styled to fit anywhere the client wished. Along with this flexibility came the risk of site editors making mistakes so I was in char the Sitecore security setup on the solution based on inheritance of roles and domains for the microsites within the setup."
+          "description": "Accessibility and browser compatibility were very important to this client due to the nature of its target audience which meant that fall-backs were always put in place for new features and thorough testing was done before any deployment. As the front end lead, I was in charge of planning the structure and setting up the Sitecore page layouts, sub-layouts and what we called “blocks” for this very flexible site. The blocks can be setup differently and placed within the homepage or any other page, including the e-commerce and checkout process pages. This also applies to the Sitecore modules used on the site such as the web forms for marketer’s module styled to fit anywhere the client wished. Along with this flexibility came the risk of site editors making mistakes so I was in charge of the Sitecore security setup on the solution based on inheritance of roles and domains for the microsites within the setup."
         },
         {
           "title": "SEGA",
