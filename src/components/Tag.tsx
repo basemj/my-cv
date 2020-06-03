@@ -1,11 +1,11 @@
 import React from "react";
 import { Text, StyleSheet } from "@react-pdf/renderer";
-import { tagColor, white } from "../colors";
+import { tagColor, tagFontColor } from "../colors";
 
 const styles = StyleSheet.create({
   tag: {
     backgroundColor: tagColor,
-    color: white,
+    color: tagFontColor,
     borderRadius: 3,
     paddingHorizontal: 7,
     paddingVertical: 2,
