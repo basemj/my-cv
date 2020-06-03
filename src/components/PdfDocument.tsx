@@ -14,6 +14,7 @@ import Tag from "./Tag";
 import Project from "./Project";
 import Footer from "./Footer";
 import ContactItem from "./ContactItem";
+import ProfileBanner from "./ProfileBanner";
 
 Font.register({
   family: "Roboto",
@@ -45,29 +46,9 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     marginBottom: 10,
   },
-  title: {
-    fontSize: 40,
-    marginBottom: 2,
-    textTransform: "uppercase",
-    fontFamily: "Roboto-thin",
-  },
-  author: {
-    fontSize: 12,
-    color: "#666666",
-    marginBottom: 10,
-  },
+
   sectionHeader: { marginBottom: 20 },
 
-  profilePhotoWrap: {
-    marginLeft: 25,
-    flex: 1,
-  },
-  profilePhoto: {
-    width: 100,
-    height: 100,
-    borderRadius: 50,
-    backgroundColor: "#eeeeee",
-  },
   verticalBanner: {
     backgroundColor: "#eeeeee",
     marginTop: -35,
@@ -138,25 +119,11 @@ function PdfDocument() {
           </View>
 
           <View style={{ flex: 1, marginLeft: 35 }}>
-            <View
-              style={{
-                flexDirection: "row",
-                paddingBottom: 25,
-                marginBottom: 25,
-                borderBottom: "2 solid #aaaaaa",
-              }}
-            >
-              <View style={{ flex: 2, textAlign: "right" }}>
-                <Text style={styles.title}>{data.basics.name}</Text>
-                <Text style={styles.author}>{data.basics.label}</Text>
-              </View>
-              <View style={styles.profilePhotoWrap}>
-                <Image
-                  src={`${process.env.PUBLIC_URL}/assets/images/${data.basics.picture}`}
-                  style={styles.profilePhoto}
-                />
-              </View>
-            </View>
+            <ProfileBanner
+              name={data.basics.name}
+              label={data.basics.label}
+              picture={`${process.env.PUBLIC_URL}/assets/images/${data.basics.picture}`}
+            />
 
             <View style={{ fontSize: 12 }}>
               <Text style={styles.sectionHeader}>CERTIFICATIONS</Text>
