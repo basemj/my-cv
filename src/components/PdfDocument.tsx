@@ -13,6 +13,7 @@ import data from "../utils/data.json";
 import Tag from "./Tag";
 import Project from "./Project";
 import Footer from "./Footer";
+import ContactItem from "./ContactItem";
 
 Font.register({
   family: "Roboto",
@@ -86,9 +87,7 @@ const styles = StyleSheet.create({
     paddingTop: 30,
     paddingBottom: 15,
   },
-  contactItem: { flexDirection: "row", marginBottom: 15 },
-  contactIcon: { height: 12, marginRight: 5 },
-  contactText: { color: "#333333", fontSize: 10 },
+
   bannerContent: {
     paddingHorizontal: 20,
     paddingVertical: 25,
@@ -104,44 +103,25 @@ function PdfDocument() {
           <View style={styles.verticalBanner}>
             <View style={styles.bannerHighlight}></View>
             <View style={styles.contactDetails}>
-              <View style={styles.contactItem}>
-                <Image
-                  src={`${process.env.PUBLIC_URL}/assets/images/maps-icon.png`}
-                  style={styles.contactIcon}
-                />
-                <Text
-                  style={styles.contactText}
-                >{`${data.basics.location.address}, ${data.basics.location.city}`}</Text>
-              </View>
-              <View style={styles.contactItem}>
-                <Image
-                  src={`${process.env.PUBLIC_URL}/assets/images/phone-icon.png`}
-                  style={styles.contactIcon}
-                />
-                <Text style={styles.contactText}>{data.basics.phone}</Text>
-              </View>
-              <View style={styles.contactItem}>
-                <Image
-                  src={`${process.env.PUBLIC_URL}/assets/images/email_icon.png`}
-                  style={styles.contactIcon}
-                />
-                <Link
-                  src={`mailto:${data.basics.email}`}
-                  style={styles.contactText}
-                >
-                  {data.basics.email}
-                </Link>
-              </View>
+              <ContactItem
+                icon={`${process.env.PUBLIC_URL}/assets/images/maps-icon.png`}
+                text={`${data.basics.location.address}, ${data.basics.location.city}`}
+              />
+              <ContactItem
+                icon={`${process.env.PUBLIC_URL}/assets/images/phone-icon.png`}
+                text={data.basics.phone}
+              />
+              <ContactItem
+                icon={`${process.env.PUBLIC_URL}/assets/images/email_icon.png`}
+                text={data.basics.email}
+                link={`mailto:${data.basics.email}`}
+              />
               {data.basics.profiles.map((profile) => (
-                <View key={profile.url} style={styles.contactItem}>
-                  <Image
-                    src={`${process.env.PUBLIC_URL}/assets/images/${profile.logo}`}
-                    style={styles.contactIcon}
-                  />
-                  <Link src={profile.url} style={styles.contactText}>
-                    {profile.display}
-                  </Link>
-                </View>
+                <ContactItem
+                  icon={`${process.env.PUBLIC_URL}/assets/images/${profile.logo}`}
+                  text={profile.display}
+                  link={profile.url}
+                />
               ))}
             </View>
             <View
