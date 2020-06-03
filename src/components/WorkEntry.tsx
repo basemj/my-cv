@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
     border: `2 solid ${primaryColor}`,
   },
   image: { borderRadius: 5, padding: 2 },
+  companyName: { fontWeight: "bold" },
   position: { fontSize: 10, color: fontSecondaryColor, marginTop: 3 },
   date: {
     flex: 1,
@@ -54,7 +55,7 @@ const WorkEntry = ({ work }: IProps) => {
           />
         </View>
         <View>
-          <Text>{work.company}</Text>
+          <Text style={styles.companyName}>{work.company}</Text>
           <Text style={styles.position}>{work.position}</Text>
         </View>
         <View style={styles.date}>

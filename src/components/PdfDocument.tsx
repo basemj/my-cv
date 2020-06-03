@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
 
 const PdfDocument = () => {
   return (
-    <Document title="Basem_Jawahri">
+    <Document title={data.basics.name}>
       <Page style={styles.body}>
         <View style={styles.topSectionWrapper}>
           <VerticalBanner
