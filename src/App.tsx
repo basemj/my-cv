@@ -5,7 +5,7 @@ import { isMobile } from "react-device-detect";
 import "./App.css";
 import data from "./utils/data.json";
 
-function App() {
+const App = () => {
   return isMobile ? (
     <div style={{ textAlign: "center", padding: 20, paddingTop: 150 }}>
       <p>
@@ -26,6 +26,6 @@ function App() {
       <PdfDocument />
     </PDFViewer>
   );
-}
+};
 
 export default App;
