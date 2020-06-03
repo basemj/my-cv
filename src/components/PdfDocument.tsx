@@ -15,6 +15,7 @@ import Project from "./Project";
 import Footer from "./Footer";
 import ContactItem from "./ContactItem";
 import ProfileBanner from "./ProfileBanner";
+import Award from "./Award";
 
 Font.register({
   family: "Roboto",
@@ -128,34 +129,12 @@ function PdfDocument() {
             <View style={{ fontSize: 12 }}>
               <Text style={styles.sectionHeader}>CERTIFICATIONS</Text>
               {data.awards.map((award) => (
-                <View
-                  key={award.title}
-                  style={{ flexDirection: "row", marginBottom: 15, flex: 1 }}
-                >
-                  <Image
-                    src={`${process.env.PUBLIC_URL}/assets/images/${award.logo}`}
-                    style={{ height: 26, marginRight: 10, borderRadius: 3 }}
-                  />
-                  <View>
-                    <Text>{award.title}</Text>
-                    <Text
-                      style={{ fontSize: 10, color: "#666666", marginTop: 3 }}
-                    >
-                      {award.awarder}
-                    </Text>
-                  </View>
-                  <View
-                    style={{
-                      flex: 1,
-                      marginLeft: 10,
-                      textAlign: "right",
-                      color: "#666666",
-                      fontSize: 10,
-                    }}
-                  >
-                    <Text>{award.date}</Text>
-                  </View>
-                </View>
+                <Award
+                  title={award.title}
+                  logo={`${process.env.PUBLIC_URL}/assets/images/${award.logo}`}
+                  awarder={award.awarder}
+                  date={award.date}
+                />
               ))}
             </View>
           </View>
