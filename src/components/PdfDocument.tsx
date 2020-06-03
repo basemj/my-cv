@@ -5,16 +5,14 @@ import {
   Document,
   StyleSheet,
   View,
-  Image,
   Font,
 } from "@react-pdf/renderer";
 import data from "../utils/data.json";
-import Tag from "./Tag";
-import Project from "./Project";
 import Footer from "./Footer";
 import ContactItem from "./ContactItem";
 import ProfileBanner from "./ProfileBanner";
-import Award from "./Award";
+import WorkEntry from "./WorkEntry";
+import Awards from "./Awards";
 
 Font.register({
   family: "Roboto",
@@ -126,90 +124,14 @@ function PdfDocument() {
               picture={`${process.env.PUBLIC_URL}/assets/images/${data.basics.picture}`}
             />
 
-            <View style={{ fontSize: 12 }}>
-              <Text style={styles.sectionHeader}>CERTIFICATIONS</Text>
-              {data.awards.map((award, index) => (
-                <Award
-                  key={index}
-                  title={award.title}
-                  logo={`${process.env.PUBLIC_URL}/assets/images/${award.logo}`}
-                  awarder={award.awarder}
-                  date={award.date}
-                />
-              ))}
-            </View>
+            <Awards awards={data.awards} />
           </View>
         </View>
 
         <Text style={styles.sectionHeader}>EXPERIENCE</Text>
 
         {data.work.map((work, index) => (
-          <View key={index}>
-            <View style={{ flexDirection: "row", alignItems: "center" }}>
-              <View
-                style={{
-                  height: 34,
-                  width: 34,
-                  marginRight: 10,
-                  borderRadius: 5,
-                  border: "2 solid #bada55",
-                }}
-              >
-                <Image
-                  src={`${process.env.PUBLIC_URL}/assets/images/${work.logo}`}
-                  style={{ borderRadius: 5, padding: 2 }}
-                />
-              </View>
-              <View>
-                <Text>{work.company}</Text>
-                <Text style={{ fontSize: 10, color: "#666666", marginTop: 3 }}>
-                  {work.position}
-                </Text>
-              </View>
-              <View
-                style={{
-                  flex: 1,
-                  marginLeft: 10,
-                  textAlign: "right",
-                  color: "#666666",
-                  fontSize: 10,
-                }}
-              >
-                <Text>
-                  {work.startDate === work.endDate
-                    ? work.startDate
-                    : `${work.startDate} - ${work.endDate}`}
-                </Text>
-              </View>
-            </View>
-            <View
-              style={{
-                borderLeft: "2 solid #bada55",
-                marginLeft: 16,
-                paddingLeft: 26,
-                paddingTop: 15,
-                paddingBottom: 20,
-                lineHeight: 1.5,
-              }}
-            >
-              <View
-                style={{
-                  flexDirection: "row",
-                  flexWrap: "wrap",
-                  lineHeight: 1.2,
-                  marginBottom: 10,
-                }}
-              >
-                {work.tags.map((tagText, index) => (
-                  <Tag key={index} tagText={tagText} />
-                ))}
-              </View>
-              <Text>{work.summary}</Text>
-              {work.projects.map((project, index) => (
-                <Project key={index} project={project} />
-              ))}
-            </View>
-          </View>
+          <WorkEntry key={index} work={work} />
         ))}
 
         <Footer name={data.basics.name} />

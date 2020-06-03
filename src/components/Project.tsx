@@ -6,13 +6,13 @@ const styles = StyleSheet.create({
   projectTitle: { fontWeight: "bold" },
 });
 
-interface Iproject {
+interface IProject {
   title: string;
   description: string;
 }
 
 interface IProps {
-  project: Iproject;
+  project: IProject;
 }
 
 const Project = ({ project }: IProps) => {
