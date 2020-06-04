@@ -19,7 +19,7 @@ const Awards = ({ awards }: IProps) => {
         <Award
           key={index}
           title={award.title}
-          logo={`${process.env.PUBLIC_URL}/assets/images/${award.logo}`}
+          logo={award.logo}
           awarder={award.awarder}
           date={award.date}
         />

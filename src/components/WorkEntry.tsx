@@ -15,6 +15,13 @@ const styles = StyleSheet.create({
     border: `2 solid ${primaryColor}`,
   },
   image: { borderRadius: 2 },
+  imageAlt: {
+    backgroundColor: primaryColor,
+    height: "100%",
+    textAlign: "center",
+    fontSize: 25,
+    fontFamily: "Roboto-thin",
+  },
   companyName: { fontWeight: "bold" },
   position: { fontSize: 10, color: fontSecondaryColor, marginTop: 3 },
   date: {
@@ -49,10 +56,14 @@ const WorkEntry = ({ work }: IProps) => {
     <View>
       <View style={styles.entryHeader} wrap={false}>
         <View style={styles.imageWrapper}>
-          <Image
-            src={`${process.env.PUBLIC_URL}/assets/images/${work.logo}`}
-            style={styles.image}
-          />
+          {work.logo ? (
+            <Image
+              src={`${process.env.PUBLIC_URL}/assets/images/${work.logo}`}
+              style={styles.image}
+            />
+          ) : (
+            <Text style={styles.imageAlt}>{work.company.charAt(0)}</Text>
+          )}
         </View>
         <View>
           <Text style={styles.companyName}>{work.company}</Text>

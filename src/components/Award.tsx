@@ -1,10 +1,20 @@
 import React from "react";
 import { Text, StyleSheet, View, Image } from "@react-pdf/renderer";
-import { fontSecondaryColor } from "../colors";
+import { fontSecondaryColor, accentColor } from "../colors";
 
 const styles = StyleSheet.create({
   awardWrap: { flexDirection: "row", marginBottom: 15, flex: 1 },
   image: { height: 26, marginRight: 10, borderRadius: 3 },
+  imageAlt: {
+    backgroundColor: accentColor,
+    height: 26,
+    width: 26,
+    marginRight: 10,
+    textAlign: "center",
+    fontSize: 22,
+    fontFamily: "Roboto-thin",
+    borderRadius: 3,
+  },
   awarder: { fontSize: 10, color: fontSecondaryColor, marginTop: 3 },
   date: {
     flex: 1,
@@ -25,7 +35,14 @@ interface IProps {
 const Award = ({ title, awarder, date, logo }: IProps) => {
   return (
     <View key={title} style={styles.awardWrap}>
-      <Image src={logo} style={styles.image} />
+      {logo ? (
+        <Image
+          src={`${process.env.PUBLIC_URL}/assets/images/${logo}`}
+          style={styles.image}
+        />
+      ) : (
+        <Text style={styles.imageAlt}>{title.charAt(0)}</Text>
+      )}
       <View>
         <Text>{title}</Text>
         <Text style={styles.awarder}>{awarder}</Text>
