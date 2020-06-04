@@ -68,7 +68,7 @@ const PdfDocument = () => {
             <ProfileBanner
               name={data.basics.name}
               label={data.basics.label}
-              picture={`${process.env.PUBLIC_URL}/assets/images/${data.basics.picture}`}
+              picture={data.basics.picture}
             />
 
             <Awards awards={data.awards} />

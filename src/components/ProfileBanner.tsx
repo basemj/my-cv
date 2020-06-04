@@ -45,9 +45,11 @@ const ProfileBanner = ({ name, label, picture }: IProps) => {
         <Text style={styles.title}>{name}</Text>
         <Text style={styles.author}>{label}</Text>
       </View>
-      <View style={styles.profilePhotoWrap}>
-        <Image src={picture} style={styles.profilePhoto} />
-      </View>
+      {picture ? 
+        <View style={styles.profilePhotoWrap}>
+          <Image src={`${process.env.PUBLIC_URL}/assets/images/${picture}`} style={styles.profilePhoto} />
+        </View> : null
+      }
     </View>
   );
 };
