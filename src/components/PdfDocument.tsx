@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../utils/data.json";
+import data from "../utils/contracts_combined.json";
 import Footer from "./Footer";
 import ProfileBanner from "./ProfileBanner";
 import WorkEntry from "./WorkEntry";
