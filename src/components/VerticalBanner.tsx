@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Text, StyleSheet, View } from "@react-pdf/renderer";
 import ContactItem from "./ContactItem";
 import { IProfile } from "../types";
@@ -41,7 +41,7 @@ interface IProps {
   profiles: Array<IProfile>;
 }
 
-const VerticalBanner = ({
+const VerticalBanner: FunctionComponent<IProps> = ({
   address,
   city,
   phone,

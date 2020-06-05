@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Text, StyleSheet, View, Image } from "@react-pdf/renderer";
 import Tag from "./Tag";
 import Project from "./Project";
@@ -51,7 +51,7 @@ interface IProps {
   work: IWork;
 }
 
-const WorkEntry = ({ work }: IProps) => {
+const WorkEntry: FunctionComponent<IProps> = ({ work }: IProps) => {
   return (
     <View>
       <View style={styles.entryHeader} wrap={false}>

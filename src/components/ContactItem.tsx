@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Text, StyleSheet, View, Image, Link } from "@react-pdf/renderer";
 import { fontPrimaryColor } from "../colors";
 
@@ -14,7 +14,7 @@ interface IProps {
   link?: string;
 }
 
-const ContactItem = ({ icon, text, link }: IProps) => {
+const ContactItem: FunctionComponent<IProps> = ({ icon, text, link }: IProps) => {
   return (
     <View style={styles.contactItem}>
       <Image src={icon} style={styles.contactIcon} />

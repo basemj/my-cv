@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { PDFViewer, PDFDownloadLink } from "@react-pdf/renderer";
 import PdfDocument from "./components/PdfDocument";
 import { isMobile } from "react-device-detect";
 import "./App.css";
 import data from "./utils/data.json";
 
-const App = () => {
+const App: FunctionComponent = () => {
   return isMobile ? (
     <div style={{ textAlign: "center", padding: 20, paddingTop: 150 }}>
       <p>

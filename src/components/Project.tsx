@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Text, StyleSheet, View } from "@react-pdf/renderer";
 import { IProject } from "../types";
 
@@ -11,7 +11,7 @@ interface IProps {
   project: IProject;
 }
 
-const Project = ({ project }: IProps) => {
+const Project: FunctionComponent<IProps> = ({ project }: IProps) => {
   return (
     <View style={styles.projectWrapper}>
       <Text style={styles.projectTitle}>{project.title}</Text>

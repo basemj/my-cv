@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Text, StyleSheet, View, Image } from "@react-pdf/renderer";
 import { fontSecondaryColor, accentColor } from "../colors";
 
@@ -32,7 +32,7 @@ interface IProps {
   logo: string;
 }
 
-const Award = ({ title, awarder, date, logo }: IProps) => {
+const Award: FunctionComponent<IProps> = ({ title, awarder, date, logo }: IProps) => {
   return (
     <View key={title} style={styles.awardWrap}>
       {logo ? (

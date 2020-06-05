@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Text, StyleSheet, View } from "@react-pdf/renderer";
 import Award from "./Award";
 import { IAward } from "../types";
@@ -11,7 +11,7 @@ interface IProps {
   awards: Array<IAward>;
 }
 
-const Awards = ({ awards }: IProps) => {
+const Awards: FunctionComponent<IProps> = ({ awards }: IProps) => {
   return (
     <View style={{ fontSize: 12 }}>
       <Text style={styles.sectionHeader}>CERTIFICATIONS</Text>

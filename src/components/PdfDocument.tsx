@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import data from "../utils/contracts_combined.json";
 import Footer from "./Footer";
 import ProfileBanner from "./ProfileBanner";
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   rightSection: { flex: 1, marginLeft: 35 },
 });
 
-const PdfDocument = () => {
+const PdfDocument: FunctionComponent = () => {
   return (
     <Document title={data.basics.name}>
       <Page style={styles.body}>

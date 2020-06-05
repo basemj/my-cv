@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Text, StyleSheet } from "@react-pdf/renderer";
 import { tagColor, tagFontColor } from "../colors";
 
@@ -19,7 +19,7 @@ interface IProps {
   tagText: string;
 }
 
-const Tag = ({ tagText }: IProps) => {
+const Tag: FunctionComponent<IProps> = ({ tagText }: IProps) => {
   return <Text style={styles.tag}>{tagText}</Text>;
 };
 

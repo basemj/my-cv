@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Text, StyleSheet, View, Image } from "@react-pdf/renderer";
 import { fontSecondaryColor, accentColor } from "../colors";
 
@@ -38,7 +38,7 @@ interface IProps {
   picture: string;
 }
 
-const ProfileBanner = ({ name, label, picture }: IProps) => {
+const ProfileBanner: FunctionComponent<IProps> = ({ name, label, picture }: IProps) => {
   return (
     <View style={styles.profileBanner}>
       <View style={{ flex: 2, textAlign: "right" }}>
