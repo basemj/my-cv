@@ -38,6 +38,8 @@
         "Ember.js",
         "Angular.js",
         "Knockout.js",
+        "React.js",
+        "node.js",
         "Yadda",
         "Qunit",
         "Mirage",
