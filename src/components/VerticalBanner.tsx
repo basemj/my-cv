@@ -57,10 +57,10 @@ const VerticalBanner: FunctionComponent<IProps> = ({
           icon={`${process.env.PUBLIC_URL}/assets/images/maps-icon.png`}
           text={`${address}, ${city}`}
         />
-        <ContactItem
+        {/* <ContactItem
           icon={`${process.env.PUBLIC_URL}/assets/images/phone-icon.png`}
           text={phone}
-        />
+        /> */}
         <ContactItem
           icon={`${process.env.PUBLIC_URL}/assets/images/email_icon.png`}
           text={email}

@@ -1,4 +1,4 @@
-export const primaryColor: string = "#bada55";
+export const primaryColor: string = "#B0E0E6";
 export const accentColor: string = "#eeeeee";
 export const fontPrimaryColor: string = "#333333";
 export const fontSecondaryColor: string = "#666666";
