@@ -83,12 +83,10 @@
           "description": "ORM is an award-winning digital strategy agency with a particular focus on providing Sitecore solutions. In my time working at ORM I was involved in multiple projects such as Arriva Chiltern Railways, South Western Railway, Transpennine Express and Great Western Railway. The work varied between Knockout.js, Angular.js and pure ES6 with a component based architecture. This is a fast paced environment where quite often switching between projects is required. My main focus here was the timely delivery of the SWR project for which I also ran client training and delivering a refactored ticket booking system for GWR which we moved from knockout to angular."
         },
         {
-          "title": "DurableDigital - The Ford Foundation (October 2016 - January 2017)",
-          "description": "The Ford Foundation is an independent, non-profit grant-making organization and the second largest philanthropy in the United States. I was involved in a revamp of their website, working closely with back-end, design and QA. The solution is built on an Umbraco platform with an angular client side presenting translatable views. The grant-making database consumes data from a REST API and translates that data into a single page application where charts are drawn to represent the data given. These charts interact with other parts of the solution combining the data provided by the service and data provided by the CMS."
+          "title": "DurableDigital - The Ford Foundation (October 2016 - January 2017)"
         },
         {
-          "title": "Avanade UK - Vodafone Digital Workplace (March 2016 - August 2016)",
-          "description": "Developed the Vodafone Digital Workplace for Vodafone internal use which consisted of a collection of provider hosted SharePoint apps in Office 365. The workplace is used by over 100,000 Vodafone employees globally and supported in sixteen languages. The client side is a SPA built on Angular with a per client customizable grid like the Windows tiles but more options in app dimensions. The workplace is where each user can add, remove, reposition and resize any of the apps within the Vodafone app store. The app store is also part of this build where each app is a separate module that interacts with the workspace and sibling modules. In the styling front, everything is mobile first HTML5/CSS3 with considerations for touch events."
+          "title": "Avanade UK - Vodafone Digital Workplace (March 2016 - August 2016)"
         }
       ]
     },

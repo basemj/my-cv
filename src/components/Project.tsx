@@ -16,7 +16,7 @@ const Project: FunctionComponent<IProps> = ({ project }: IProps) => {
     project &&
     <View style={styles.projectWrapper}>
       <Text style={styles.projectTitle}>{project.title}</Text>
-      <Text>{project.description}</Text>
+      {project.description && <Text>{project.description}</Text>}
     </View>
   );
 };
