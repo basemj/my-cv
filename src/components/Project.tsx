@@ -8,11 +8,12 @@ const styles = StyleSheet.create({
 });
 
 interface IProps {
-  project: IProject;
+  project: IProject | null;
 }
 
 const Project: FunctionComponent<IProps> = ({ project }: IProps) => {
   return (
+    project &&
     <View style={styles.projectWrapper}>
       <Text style={styles.projectTitle}>{project.title}</Text>
       <Text>{project.description}</Text>

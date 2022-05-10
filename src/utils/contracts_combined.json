@@ -6,7 +6,7 @@
     "email": "basem.jawahri@gmail.com",
     "phone": "+44 (0) 795 116 0004",
     "website": "",
-    "summary": "I am a front end developer with over fifteen years of experience in technology looking for opportunities at companies that are vibrant, energetic and willing to embrace cutting edge technology. I have the technical knowhow to pick up new technology and methodologies and a keen eye for good code.",
+    "summary": "I am a front end developer with over fifteen years’ \nexperience in technology, looking for opportunities at companies that are vibrant, energetic, and willing to \nembrace cutting-edge \ntechnology. I have the \ntechnical know-how to pick up new technology and methodologies and a keen eye for good code.",
     "location": {
       "address": "Maida Vale",
       "postalCode": "",
@@ -28,11 +28,10 @@
     {
       "company": "EdgeSentry",
       "logo": "es.png",
-      "position": "Senior Front End Developer",
+      "position": "Senior Front End Developer (contract)",
       "website": "https://www.britishgas.co.uk",
       "startDate": "January 2016",
       "endDate": "Present",
-      "summary": "Contracting under my own limited company.",
       "highlights": [],
       "tags": [
         "Ember.js",
@@ -137,7 +136,7 @@
       "website": "",
       "startDate": "March 2013",
       "endDate": "January 2016",
-      "summary": "For three years at JustGiving I was part of a growing team of eleven front end developers in an agile environment and was fortunate enough to be allocated to some of the very important parts of the website. Some of the areas which I was able to work on included the Charity landing pages, the user profile page, the homepages and two versions of the donation process. While working on these projects, I had the opportunity to lead the path to a responsive web experience and to create a new style guide for future use and maintenance of the JustGiving brand. I was able to map out a monolith and come up with a plan on how we can distribute and unify the new style guide/component library. Part of this plan was to bring all CMS content into one platform with a flexible layout configuration.",
+      "summary": "Worked on the two main landing pages of the website, homepage and charity landing page. Also responsible for building the donation process end to end and running the responsive taskforce.",
       "highlights": [],
       "tags": [
         "SASS",
@@ -155,46 +154,18 @@
         "Animation",
         "Responsive",
         "Optimizely"
-      ],
-      "projects": [
-        {
-          "title": "Homepage",
-          "description": "The homepage was built with Angular.js and served a logged in and a logged out state. With this project there was an emphasis on performance as well as strong UX decisions. The logged in state had an instagram-like infinite scrolling with featured cards. This project also carried with it the redesign of the header/navigation to a responsive design and hosted on AWS as a separate component."
-        },
-        {
-          "title": "One click donation",
-          "description": "The one click donation process was built on top of the existing donation process with knockout.js which allowed logged in visitors to donate with the least friction possible. This project involved a lot of A/B testing and analytics which saw an 11% rise in donations."
-        },
-        {
-          "title": "Charity Landing page",
-          "description": "The charity landing page was the number one entry page to the website. This page was very important in terms of visitor engagement and retention. I was involved in redesigning and moving of this page from the legacy code to an AWS hosted responsive layout. I took charge during this project the drive to move to a responsive layout which led to the development of the JustGiving style-guide."
-        }
       ]
     },
     {
       "company": "BasePixel",
       "logo": "basepixel.png",
-      "position": "Senior Front End Developer",
+      "position": "Senior Front End Developer (contract)",
       "website": "",
       "startDate": "October 2011",
       "endDate": "March 2013",
-      "summary": "",
+      "summary": "Worked as a contractor on a few projects like a sharepoint intranet for Sysdoc, Sitecore solution for ByeBye London and an Umbraco CMS solution for West9properties.",
       "highlights": [],
-      "tags": ["SharePoint", "Sitecore", "Umbraco", "Backbone", "Bitbucket"],
-      "projects": [
-        {
-          "title": "Sysdoc",
-          "description": "SharePoint intranet solution for a client of Sysdoc using SharePoint designer."
-        },
-        {
-          "title": "ByeBye London",
-          "description": "Sitecore solution for ByeBye London, an advertising agency and tour guide catalogue to digitize it's operation."
-        },
-        {
-          "title": "West9properties",
-          "description": "Creating a web presence for an estate agency using Umbraco CMS providing viewings scheduler."
-        }
-      ]
+      "tags": ["SharePoint", "Sitecore", "Umbraco", "Backbone", "Bitbucket"]
     },
     {
       "company": "ClearPeople",
@@ -203,7 +174,7 @@
       "website": "",
       "startDate": "October 2006",
       "endDate": "October 2011",
-      "summary": "I started my front end developer career at ClearPeople.",
+      "summary": "Worked on many Sitecore and Sharepoint projects including the likes of the National Autistic Society, SEGA and Stena Lines having a great focus on Accessibility and carrying out client training.",
       "highlights": [],
       "tags": [
         "XHTML",
@@ -218,20 +189,6 @@
         "RAD Controls",
         "AJAX",
         "Microsoft SharePoint 2010"
-      ],
-      "projects": [
-        {
-          "title": "National Autistic Society",
-          "description": "Accessibility and browser compatibility were very important to this client due to the nature of its target audience which meant that fall-backs were always put in place for new features and thorough testing was done before any deployment. As the front end lead, I was in charge of planning the structure and setting up the Sitecore page layouts, sub-layouts and what we called “blocks” for this very flexible site. The blocks can be setup differently and placed within the homepage or any other page, including the e-commerce and checkout process pages. This also applies to the Sitecore modules used on the site such as the web forms for marketer’s module styled to fit anywhere the client wished. Along with this flexibility came the risk of site editors making mistakes so I was in charge of the Sitecore security setup on the solution based on inheritance of roles and domains for the microsites within the setup."
-        },
-        {
-          "title": "SEGA",
-          "description": "This SEGA project was for a Microsoft SharePoint intranet publishing site with a very challenging design which included a custom jQuery carousel with AJAX functionality, some custom web parts and as much branding of vanilla SharePoint features as possible. With a new master page, page layouts, menus and a lot of customization to the SharePoint ribbon deployed, I was able to go to the client offices and carry out a training session for the new users which included instructions on how to manage the site and the already available social networking features of SharePoint."
-        },
-        {
-          "title": "Stena Lines",
-          "description": "Stena recognized the opportunity to upgrade the websites of four of their business units from Microsoft CMS 2002 to SharePoint 2010. This was to be done in a manner that the transition was seamless to the site visitors. Rather than migrating all of the styling from the previous solution, we brought in what was relevant and cleaned it up. A lot of this was then modified in order to work with the various SharePoint controls such as the navigation and breadcrumbs etc."
-        }
       ]
     }
   ],

@@ -9,9 +9,9 @@ export interface IWork {
   position: string,
   startDate: string,
   endDate: string,
-  summary: string,
+  summary?: string | undefined,
   tags: Array<string>,
-  projects: Array<IProject>,
+  projects?: Array<IProject>,
 }
 
 export interface IAward {

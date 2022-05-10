@@ -83,8 +83,8 @@ const WorkEntry: FunctionComponent<IProps> = ({ work }: IProps) => {
             <Tag key={index} tagText={tagText} />
           ))}
         </View>
-        <Text>{work.summary}</Text>
-        {work.projects.map((project, index) => (
+        {work.summary && <Text>{work.summary}</Text> }
+        {work.projects?.map((project, index) => (
           <Project key={index} project={project} />
         ))}
       </View>
