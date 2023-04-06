@@ -26,6 +26,23 @@
   },
   "work": [
     {
+      "company": "Motive Partners",
+      "logo": "vd.jpeg",
+      "position": "Senior Front End Developer",
+      "website": "motivepartners.com",
+      "startDate": "July 2022",
+      "endDate": "April 2023",
+      "summary": "test",
+      "highlights": [],
+      "tags": [
+        "SCSS",
+        "React",
+        "Typescript",
+        "Gitlab"
+      ],
+      "projects": []
+    },
+    {
       "company": "EdgeSentry",
       "logo": "es.png",
       "position": "Senior Front End Developer (contract)",
