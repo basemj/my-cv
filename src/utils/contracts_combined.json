@@ -26,23 +26,6 @@
   },
   "work": [
     {
-      "company": "Motive Partners",
-      "logo": "vd.jpeg",
-      "position": "Senior Front End Developer",
-      "website": "motivepartners.com",
-      "startDate": "July 2022",
-      "endDate": "April 2023",
-      "summary": "I worked at motive for the last 8 months before a company wide redundancy event reduced staff by 30%. Whilst at motive i worked on two of their main projects. The first was a new credit checking product named Rise which used alternative data to produce a credit score for underserved areas of a credit book, i was in charge of the analytics and reporting layer on the frontend. The second was developing the frontend element of motives reusable assets project, here our aim was to build a set of scalable micro services and micro frontends which interlock together to build frameworks of new projects.",
-      "highlights": [],
-      "tags": [
-        "SCSS",
-        "React",
-        "Typescript",
-        "Gitlab"
-      ],
-      "projects": []
-    },
-    {
       "company": "EdgeSentry",
       "logo": "es.png",
       "position": "Senior Front End Developer (contract)",
@@ -83,6 +66,10 @@
         "Karma"
       ],
       "projects": [
+        {
+          "title": "Motive Partners (July 2022 - April 2023)",
+          "description": "I worked at motive for the last 8 months before a company wide redundancy event reduced staff by 30%. Whilst at motive i worked on two of their main projects. The first was a new credit checking product named Rise which used alternative data to produce a credit score for underserved areas of a credit book, i was in charge of the analytics and reporting layer on the frontend. The second was developing the frontend element of motives reusable assets project, here our aim was to build a set of scalable micro services and micro frontends which interlock together to build frameworks of new projects."
+        },
         {
           "title": "Swordfish Advertising - Unify Health App (January 2021 - March 2021)",
           "description": "Unify Health is an for people living with cancer. It helps you locate and speak to community pharmacists, track your symptoms, set reminders for medication and more. I was part of a team that built the Unify Health App using React native, expo-cli, Saga and Redux store for data flow."
@@ -151,24 +138,15 @@
       "website": "",
       "startDate": "March 2013",
       "endDate": "January 2016",
-      "summary": "Worked on the two main landing pages of the website, homepage and charity landing page. Also responsible for building the donation process end to end and running the responsive taskforce.",
       "highlights": [],
       "tags": [
-        "SASS",
         "SCSS",
         "LESS",
-        "XML",
-        "jQuery UI",
         "Razor view engine",
-        "Umbraco CMS",
-        "MV*",
-        "Angular.js",
-        "knockout.js",
-        "Github",
-        "Git Submodule",
-        "Animation",
-        "Responsive",
-        "Optimizely"
+        "Umbraco",
+        "AngularJs",
+        "knockoutJs",
+        "Git Submodule"
       ]
     },
     {
@@ -178,7 +156,6 @@
       "website": "",
       "startDate": "October 2011",
       "endDate": "March 2013",
-      "summary": "Worked as a contractor on a few projects like a sharepoint intranet for Sysdoc, Sitecore solution for ByeBye London and an Umbraco CMS solution for West9properties.",
       "highlights": [],
       "tags": ["SharePoint", "Sitecore", "Umbraco", "Backbone", "Bitbucket"]
     },
@@ -189,20 +166,12 @@
       "website": "",
       "startDate": "October 2006",
       "endDate": "October 2011",
-      "summary": "Worked on many Sitecore and Sharepoint projects including the likes of the National Autistic Society, SEGA and Stena Lines having a great focus on Accessibility and carrying out client training.",
       "highlights": [],
       "tags": [
-        "XHTML",
-        "CSS",
         "JavaScript",
         "ASP.NET C#",
-        "XSLT",
-        "XML",
         "Sitecore CMS",
         "jQuery",
-        "jQuery UI",
-        "RAD Controls",
-        "AJAX",
         "Microsoft SharePoint 2010"
       ]
     }
